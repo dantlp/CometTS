@@ -15,4 +15,4 @@ sns.set(color_codes=True)
 
 ## Define default paths for sample data
 input_path=os.path.abspath('')
-input_path=os.path.join(input_path.split("Notebooks")[0],"CometTS/VIIRS_Sample")
+input_path=os.path.join(input_path.split("Notebooks"0)[],"CometTS/VIIRS_Sample")

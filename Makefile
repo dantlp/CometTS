@@ -10,4 +10,7 @@ output.0: output.c function.h
 
 clean:
 	rm -f ARIMA *.o
-	
+
+report.pdf: report.tex ARIMA.png
+	latexmk -pdf $<
+
