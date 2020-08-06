@@ -10,7 +10,15 @@ CometTS can be installed in multiple ways including conda, pip, docker, and clon
 
 USE
 
-pip install CometTS
+pip install CometTS 
+
+#If this does not work 
+
+    git clone https://github.com/CosmiQ/CometTS.git
+    cd CometTS
+    conda env create -f environment.yml
+    source activate CometTS
+    pip install CometTS
 
 License
 
