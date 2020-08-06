@@ -1,16 +1,15 @@
 #Executable to create a ARIMA model
-ARIMA: main.o output.o 
-	gcc -o ARIMA main.o output.o 
-
-main.0: main.c function.h
-	gcc -c main.c
-
-output.0: output.c function.h
-	gcc -c output.c 
-
-clean:
-	rm -f ARIMA *.o
-
 report.pdf: report.tex ARIMA.png
 	latexmk -pdf $<
+
+create.0= create_csv.py 
+	gcc -c create_csv.py
+
+plot_result.0: plot_result.py
+	gcc -c plot_result.py 
+
+clean:
+	rm -f ARIMA*.png
+
+
 
