@@ -22,7 +22,7 @@ zonalpoly = os.path.join(input_path,'POLYGON.shp')
 NoDataValue = '-1'
 mask_value ='0'
 
-
+#create CSV file with analisis
 print(directory_csv)
 I = run_comet(
     directory_csv,
@@ -30,7 +30,7 @@ I = run_comet(
     NoDataValue,
     mask_value,
     maskit=True)
-run_plot(I,figname='Test1.png')
+run_plot(I,figname='Brightness_Overtime.png')
 
 
 
