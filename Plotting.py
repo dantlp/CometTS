@@ -325,13 +325,16 @@ def run_plot_arima(
                               fancybox=True, shadow=True,
                               fontsize='x-small')
 
+                # save with figname
+                if len(figname) > 0:
+                    plt.savefig(figname, dpi=500)
+
+
                 ax.set_title(title)
                 plt.tight_layout()
                 plt.show()
 
-                # save with figname
-                if len(figname) > 0:
-                    plt.savefig(figname, dpi=500)
+
 
 
 def run_dual_plot(
