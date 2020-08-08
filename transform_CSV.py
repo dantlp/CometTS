@@ -30,7 +30,7 @@ I = run_comet(
     NoDataValue,
     mask_value,
     maskit=True)
-run_plot(I,figname='Brightness_Overtime.png')
+run_plot(I,figname='First_plot.png')
 
 
 
