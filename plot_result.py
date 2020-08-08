@@ -5,8 +5,7 @@ import shapely.wkt
 import seaborn as sns
 from CometTS.Plotting import run_plot, run_plot_arima
 sns.set(color_codes=True)
-%matplotlib inline
-
+import matplotlib.pyplot as pl
 ## Define default paths for sample data
 input_path=os.path.abspath('')
 input_path=os.path.join(input_path.split("CometTS")[0],"CometTS/VIIRSData")
@@ -32,3 +31,4 @@ def gen_plots_arima(input_csv):
 
 input_CSV = os.path.join(input_path, "San_Juan_FullStats.csv")
 gen_plots(input_CSV)
+pl.savefig(os.path.join(input_path, 'ARIMA1.png'))
