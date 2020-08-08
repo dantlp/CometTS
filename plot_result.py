@@ -7,6 +7,8 @@ from CometTS.Plotting import run_plot, run_plot_arima
 sns.set(color_codes=True)
 import matplotlib.pyplot as pl
 ## Define default paths for sample data
+Pic_Path=os.path.abspath('')
+Pic_Path=os.path.join(Pic_Path.split("CometTS")[0],"CometTS/VIIRSData")
 input_path=os.path.abspath('')
 input_path=os.path.join(input_path.split("CometTS")[0],"CometTS/VIIRSData")
 
@@ -31,4 +33,5 @@ def gen_plots_arima(input_csv):
 
 input_CSV = os.path.join(input_path, "San_Juan_FullStats.csv")
 gen_plots(input_CSV)
-pl.savefig(os.path.join(input_path, 'ARIMA1.png'))
+Pic_Path
+pl.savefig('ARIMA1.png')

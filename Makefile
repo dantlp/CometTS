@@ -1,10 +1,9 @@
 #Executable to create a ARIMA model
-report.pdf: report.tex 
+report.pdf: report.tex ARIMA1.png
 	latexmk -pdf $<
 
-plot_result.0: plot_result.py San_Juan_FullStats.csv 
-	gcc -c plot_result.py San_Juan_FullStats.csv
-
+ARIMA1.png: plot_result.py  
+	plot_result.py 
 
 clean:
 	rm -f *.o
