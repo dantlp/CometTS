@@ -56,6 +56,8 @@ Save as Shapefile and extract inside VIIRSData
 execute make file, this should create a Raster_List, Create a FullSTAT file, Create 
 a ANOVA FILE and Create a pdf Report. (make File not working when tested. Partially worked in Conda Python 3.7.8)
 
+Had To Edit Original Coding in Plotting, given that the code did not let me Store png file given the order of operations in matplotlib show function and savefigure.
+
 
 License
 
