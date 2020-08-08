@@ -1,7 +1,7 @@
 #Imports
 import os
 from CometTS.CometTS import run_comet
-from CometTS.Plotting import run_plot, run_plot_arima
+from Plotting import run_plot, run_plot_arima
 from CometTS.ARIMA import run_arima, timeseries_trend
 import ipywidgets as widgets
 from IPython.display import Javascript, display, clear_output
