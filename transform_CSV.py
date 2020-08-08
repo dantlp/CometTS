@@ -15,6 +15,23 @@ sns.set(color_codes=True)
 
 ## Define default paths for sample data
 input_path=os.path.abspath('')
-input_path=os.path.join(input_path.split("CometTS")[0],"CometTS/VIIRSData")
-I=run_comet(Raster_List.csv,POLYGON.shp,Malaga_Fulltest.csv)
-plt.show(I)
+input_path=os.path.join(input_path.split("CometTS")[0],"CometTS\VIIRSData")
+
+directory_csv = os.path.join(input_path,'Raster_List.csv')
+zonalpoly = os.path.join(input_path,'POLYGON.shp')
+NoDataValue = '-1'
+mask_value ='0'
+
+
+print(directory_csv)
+I = run_comet(
+    directory_csv,
+    zonalpoly,
+    NoDataValue,
+    mask_value,
+    maskit=True)
+run_plot(I,figname='Test1.png')
+
+
+
+
